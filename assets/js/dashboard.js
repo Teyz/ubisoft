@@ -1,3 +1,28 @@
+var compteur_kills_brawks = document.getElementById("compteur_brawks");
+var compteur_kills_jbzz = document.getElementById("compteur_jbzz");
+var compteur_kills_lowan = document.getElementById("compteur_lowan");
+
+var evtSource = new EventSource('/GET/brawks/kill');
+
+evtSource.addEventListener('connected', (e) => {
+  var data = JSON.parse(e.data);
+  compteur_kills_brawks.innerHTML = data.kill;
+});
+
+var evtSourceJbzz = new EventSource('/GET/jbzz/kill');
+
+evtSourceJbzz.addEventListener('connected', (e) => {
+  var data = JSON.parse(e.data);
+  compteur_kills_jbzz.innerHTML = data.kill;
+});
+
+var evtSourceLowan = new EventSource('/GET/lowan/kill');
+
+evtSourceLowan.addEventListener('connected', (e) => {
+  var data = JSON.parse(e.data);
+  compteur_kills_lowan.innerHTML = data.kill;
+});
+
 const addKillBrawks = document.getElementsByClassName("addKillBrawks");
 const removeKillBrawks = document.getElementsByClassName("removeKillBrawks");
 const resetKillBrawks = document.getElementsByClassName("resetKillBrawks");

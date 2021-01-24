@@ -39,6 +39,11 @@ h2{
   margin: 0;
 }
 
+h3{
+  padding: 0;
+  margin: 16px;
+}
+
 .btn{
   text-decoration: none;
 
@@ -60,4 +65,18 @@ div{
   margin: 24px;
 }
 
+.content{
+  margin: 0 !important;
 
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+a{
+  margin: 16px;
+}
+
+a:nth-child(1){
+  margin-left: 0 !important;
+}
