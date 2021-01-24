@@ -59,13 +59,22 @@ function resetKillLowan() {
     killLowan = 0;
 }
 
-
 app.use(function (req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    res.setHeader('Access-Control-Allow-Credentials', true);
-    next();
+    const auth = { login: 'Brawkscorp', password: 'Sasbbbiconic' }
+
+    const b64auth = (req.headers.authorization || '').split(' ')[1] || ''
+    const [login, password] = Buffer.from(b64auth, 'base64').toString().split(':')
+
+    if (login && password && login === auth.login && password === auth.password) {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+        res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+        res.setHeader('Access-Control-Allow-Credentials', true);
+        return next();
+    }
+
+    res.set('WWW-Authenticate', 'Basic realm="401"')
+    res.status(401).send('Authentication required.')
 });
 
 app.use(cors())
