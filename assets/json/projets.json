@@ -1,0 +1,24 @@
+{
+  "FortniteStats": {
+    "Description": "Twitter Bot permettant de récupérer sous forme d'image ses statistiques de jeu",
+    "Langages": "NodeJs",
+    "Github": "https://github.com/Teyz/FortniteStats"
+  },
+  "Vue-CV": {
+    "Description": "CV sous forme d'un site web",
+    "Langages": "Vue 3",
+    "Github": "https://github.com/Teyz/Vue-CV"
+  },
+  "Dashboard - Teyz": {
+    "Description": "Dashboard permettant de superviser mes projets de Bot",
+    "Framework": "Vue 2, NodeJs",
+    "Outils": "Firebase, Mongodb",
+    "Lien": "https://dashboard.teyz.fr/#/dashboard",
+    "Ids": "recruteur/recruteur2021"
+  },
+  "Quiz": {
+    "Description": "PWA Quiz",
+    "Framework": "React",
+    "Github": "https://github.com/ecvdbdx/ewe_react-quiz"
+  }
+}
