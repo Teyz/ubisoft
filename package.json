@@ -1,7 +1,7 @@
 {
-  "name": "Brawks",
+  "name": "Ubisoft",
   "version": "1.0.0",
-  "description": "Compteur en temps réel",
+  "description": "Candidature pour Ubisoft",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -11,8 +11,6 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "path": "^0.12.7",
-    "pug": "^3.0.0",
-    "sse-express": "^1.0.2"
+    "swagger-ui-express": "^4.1.6"
   }
 }

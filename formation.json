@@ -1,0 +1,17 @@
+{
+  "2018": {
+    "Etablisemment" : "Université Paris 13 - Villetaneuse",
+    "Diplôme": "DUT Informatique",
+    "Durée": "2 ans"
+  },
+  "2019": {
+    "Etablisemment" : "Digital Campus - Bordeaux",
+    "Diplôme": "Bachelor chef de projet multimedia",
+    "Durée": "1 an"
+  },
+  "2020": {
+    "Etablisemment" : "ECV Digital - Bordeaux",
+    "Diplôme": "Mastère développement web",
+    "Durée": "2 ans (en cours)"
+  }
+}

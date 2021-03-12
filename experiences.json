@@ -1,0 +1,49 @@
+{
+  "Stage": {
+    "G-Zones - Startup": {
+      "Poste" : "Développeur Full Stack",
+      "Missions": "Amélioration du design, Refactoring code (AngularJs & Java), Utilisation et développement d'API REST",
+      "Langages": "AngularJs & Java",
+      "Durée": "12 semaines"
+    },
+    "Influa": {
+      "Poste" : "Développeur Full Stack",
+      "Missions": "Intégration: Bootstrap, HTML & CSS, Wordpress: Modification de thème premium (PHP)",
+      "Langages": "PHP, HTML & CSS",
+      "Durée": "15 semaines"
+    }
+  },
+  "Alternance": {
+    "Parker & Parker": {
+      "Poste" : "Développeur Full Stack",
+      "Missions": "Intégration: Bootstrap, HTML & CSS, Wordpress: création de thème wordpress sur mesure, Symfony: Apprentissage du framework et développement",
+      "Langages": "PHP, HTML & CSS",
+      "Projets": {
+        "Creativ'été": "https://creativete.rivp.fr/",
+        "AT Internet": "https://www.atinternet.com/",
+        "RIVP": "https://www.rivp.fr/", 
+        "Intranet Cned (Accessibilité)": "https://intranet.cned.fr/",
+        "Espace Concours": "https://www.espace-concours.fr/"
+      },
+      "Durée": "1 an"
+    }
+  },
+  "Freelance": {
+    "Ibbü": {
+      "Poste" : "Expert informatique",
+      "Missions": "Expert informatique pour le site Cdiscount & RS Components : Conseil en vente (Emploi étudiant)",
+      "Durée": "2 an"
+    },
+    "Brawks": {
+      "Poste" : "Développeur Full Stack",
+      "Missions": "Mise en place d'outils et services pour le streamer Brawks",
+      "Langages": "Vue 3, NodeJS & PHP",
+      "Projets": {
+        "LaGrosseGame": "Création d'un compteur en temps réel",
+        "BrawksNight": "Création d'une lucky Wheel",
+        "Hardzone": "Création d'un affichage de carte en temps réel avec animation"
+      },
+      "Durée": "En cours"
+    }
+  }
+}

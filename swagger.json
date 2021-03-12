@@ -1,0 +1,31 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Candidature - Ubisoft",
+    "description": "Candidature pour le poste de développeur back-end nodejs",
+    "version": "1.0"
+  },
+  "produces": ["application/json"],
+  "paths": {
+    "/cv/formation": {
+    "get": {
+      "x-swagger-router-controller": "bar",
+      "operationId": "1",
+      "tags": ["CV"],
+      "description": "Récupère la liste de mes formations",
+      "parameters": [],
+      "responses": {}
+    }
+   },
+   "/cv/experiences": {
+    "get": {
+      "x-swagger-router-controller": "bar",
+      "operationId": "2",
+      "tags": ["CV"],
+      "description": "Récupère la liste de mes expériences",
+      "parameters": [],
+      "responses": {}
+    }
+   }
+  }
+}
