@@ -17,7 +17,7 @@
         "responses": {}
       }
      },
-    "/cv/formation": {
+    "/formation": {
     "get": {
       "x-swagger-router-controller": "bar",
       "operationId": "2",
@@ -27,7 +27,7 @@
       "responses": {}
     }
    },
-   "/cv/experiences": {
+   "/experiences": {
     "get": {
       "x-swagger-router-controller": "bar",
       "operationId": "3",
@@ -37,7 +37,7 @@
       "responses": {}
     }
    },
-   "/cv/projets": {
+   "/projets": {
     "get": {
       "x-swagger-router-controller": "bar",
       "operationId": "4",
@@ -63,6 +63,16 @@
       "operationId": "6",
       "tags": ["Références"],
       "description": "Récupère la liste des références",
+      "parameters": [],
+      "responses": {}
+    }
+   },
+   "/divers": {
+    "get": {
+      "x-swagger-router-controller": "bar",
+      "operationId": "7",
+      "tags": ["Liens utiles"],
+      "description": "Récupère la liste des liens divers",
       "parameters": [],
       "responses": {}
     }

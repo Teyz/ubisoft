@@ -10,6 +10,7 @@ const projets = require('./assets/json/projets.json');
 const references = require('./assets/json/references.json');
 const sports = require('./assets/json/sports.json');
 const profil = require('./assets/json/profil.json');
+const divers = require('./assets/json/divers.json');
 
 const app = express();
 const options = {
@@ -30,15 +31,15 @@ app.use(cors())
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options));
 
 
-app.get('/cv/formation', (req, res) => {
+app.get('/formation', (req, res) => {
     res.status(200).json({ 'formation': formation });
 });
 
-app.get('/cv/experiences', (req, res) => {
+app.get('/experiences', (req, res) => {
     res.status(200).json({ 'experiences': experiences });
 });
 
-app.get('/cv/projets', (req, res) => {
+app.get('/projets', (req, res) => {
     res.status(200).json({ 'projets': projets });
 });
 
@@ -52,6 +53,10 @@ app.get('/sports', (req, res) => {
 
 app.get('/profil', (req, res) => {
     res.status(200).json({ 'profil': profil });
+});
+
+app.get('/divers', (req, res) => {
+    res.status(200).json({ 'divers': divers });
 });
 
 app.get('/favicon', function (req, res) {
