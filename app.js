@@ -55,6 +55,10 @@ app.get('/profil', (req, res) => {
     res.status(200).json({ 'profil': profil });
 });
 
+app.get('/', (req, res) => {
+    res.redirect('/api-docs');
+});
+
 app.get('/divers', (req, res) => {
     res.status(200).json({ 'divers': divers });
 });
