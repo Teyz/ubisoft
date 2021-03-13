@@ -3,6 +3,7 @@ const cors = require('cors');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 const path = require('path');
+const http = require('http');
 
 const formation = require('./assets/json/formation.json');
 const experiences = require('./assets/json/experiences.json');
@@ -72,4 +73,4 @@ app.get('/css', function (req, res) {
 });
 
 
-app.listen(7000);
+http.createServer(app).listen(7000);
