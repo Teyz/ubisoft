@@ -2,27 +2,77 @@
   "swagger": "2.0",
   "info": {
     "title": "Candidature - Ubisoft",
-    "description": "Candidature pour le poste de développeur back-end nodejs",
+    "description": "Candidature pour le poste de développeur back-end NodeJS",
     "version": "1.0"
   },
   "produces": ["application/json"],
   "paths": {
-    "/cv/formation": {
+    "/profil": {
+      "get": {
+        "x-swagger-router-controller": "bar",
+        "operationId": "1",
+        "tags": ["À propos de moi"],
+        "description": "Récupère les informations à propos de moi",
+        "parameters": [],
+        "responses": {}
+      }
+     },
+    "/formation": {
     "get": {
       "x-swagger-router-controller": "bar",
-      "operationId": "1",
+      "operationId": "2",
       "tags": ["CV"],
       "description": "Récupère la liste de mes formations",
       "parameters": [],
       "responses": {}
     }
    },
-   "/cv/experiences": {
+   "/experiences": {
     "get": {
       "x-swagger-router-controller": "bar",
-      "operationId": "2",
+      "operationId": "3",
       "tags": ["CV"],
       "description": "Récupère la liste de mes expériences",
+      "parameters": [],
+      "responses": {}
+    }
+   },
+   "/projets": {
+    "get": {
+      "x-swagger-router-controller": "bar",
+      "operationId": "4",
+      "tags": ["CV"],
+      "description": "Récupère la liste de mes projets personnels",
+      "parameters": [],
+      "responses": {}
+    }
+   },
+   "/sports": {
+    "get": {
+      "x-swagger-router-controller": "bar",
+      "operationId": "5",
+      "tags": ["Sports"],
+      "description": "Récupère la liste des sports que je pratique",
+      "parameters": [],
+      "responses": {}
+    }
+   },
+   "/references": {
+    "get": {
+      "x-swagger-router-controller": "bar",
+      "operationId": "6",
+      "tags": ["Références"],
+      "description": "Récupère la liste des références",
+      "parameters": [],
+      "responses": {}
+    }
+   },
+   "/divers": {
+    "get": {
+      "x-swagger-router-controller": "bar",
+      "operationId": "7",
+      "tags": ["Liens utiles"],
+      "description": "Récupère la liste des liens divers",
       "parameters": [],
       "responses": {}
     }
